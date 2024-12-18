@@ -4,8 +4,9 @@ This repository is dedicated to collecting and sharing research papers on diffus
 ## Papers
 
 - **Title**: [Classifier-Free Diffusion Guidance](https://arxiv.org/abs/2207.12598)
-  - **Authors**: Jonathan Ho, Tim Salimans
-  - **Published in**: NeurIPS 2021 Workshop on Deep Generative Models and Downstream Applications
+  - Jonathan Ho, Tim Salimans
+  - NeurIPS 2021 Workshop on Deep Generative Models and Downstream Applications
+  - July 26, 2022
 
 ## How to Contribute
 If you have any relevant papers to add, please follow the guidelines below:
