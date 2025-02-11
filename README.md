@@ -18,11 +18,11 @@ This repository is dedicated to collecting and sharing research papers on diffus
 | [**Applying Guidance in a Limited Interval Improves Sample and Distribution Quality in Diffusion Models**](https://proceedings.neurips.cc/paper_files/paper/2024/hash/dd540e1c8d26687d56d296e64d35949f-Abstract-Conference.html) | [Code](https://github.com/kynkaat/guidance-interval)                                                        | 2025.01    | NeurIPS 2024 |
 
 
-## How to Contribute
+### How to Contribute
 If you have any relevant papers to add, please follow the guidelines below:
 1. Fork the repository.
 2. Create a new branch for your changes.
-3. Add your paper details in the appropriate section.
+3. Add your paper details in the paper section.
 4. Commit and push your changes.
 5. Open a pull request for review.
 
