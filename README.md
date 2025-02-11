@@ -7,7 +7,7 @@ This repository is dedicated to collecting and sharing research papers on diffus
 | Title                                                                 | Code                                                       | Date       | Publication |
 | --------------------------------------------------------------------- | ---------------------------------------------------------- | ---------- | ----------- |
 | [**Diffusion Models Beat GANs on Image Synthesis**](https://openreview.net/forum?id=qw8AKxfYbI) | [Code](https://github.com/openai/guided-diffusion)         | 2021.12    | NeurIPS 2021 |
-| [**Classifier-Free Diffusion Guidance**](https://openreview.net/forum?id=qw8AKxfYbI) | N/A                                                        | 2021.12    | ArXiv       |
+| [**Classifier-Free Diffusion Guidance**](https://openreview.net/forum?id=qw8AKxfYbI) | N/A                                                        | 2021.12    | NeurIPS 2021 Workshop       |
 | [**Universal Guidance for Diffusion Models**](https://ieeexplore.ieee.org/document/10208653/) | [Code](https://github.com/arpitbansal297/Universal-Guided-Diffusion)                                                        | 2023.06    | CVPRW2023   |
 | [**Improving Sample Quality of Diffusion Models Using Self-Attention Guidance**](https://ieeexplore.ieee.org/document/10378223/) | [Code](https://github.com/SusungHong/Self-Attention-Guidance)                                                       | 2023.10    | ICCV2023    |
 | [**ProtoDiffusion: Classifier-Free Diffusion Guidance with Prototype Learning**](https://proceedings.mlr.press/v222/baykal24a.html) | [Code](https://github.com/ituvisionlab/ProtoDiffusion)                                                        | 2024.02    | PMLR        |
