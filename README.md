@@ -1,24 +1,51 @@
-## Awesome-Diffusion-Guidance
-This repository is dedicated to collecting and sharing research papers on diffusion guidance methods.
+## Awesome-Diffusion-Guidance [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
+🚀 **Welcome to the collection of research on diffusion guidance methods!**  
+This repo curates cutting-edge papers to help you stay ahead in Diffusion Guidance. Dive in, contribute, and let's advance the field together! 🌟
+
+## Table of Contents
+- [Papers](#papers)
+- [How to Contribute](#how-to-contribute)
+- [To Do](#to-do)
+  
 ### Papers
+| Title | Code | Date | Publication | Summary |
+| --------------------------------------------------------------------- | ---------------------------------------------------------- | ---------- | ----------- | ----------- |
+| [**Diffusion Models Beat GANs on Image Synthesis**]([https://openreview.net/forum?id=qw8AKxfYbI](https://proceedings.neurips.cc/paper_files/paper/2021/file/49ad23d1ec9fa4bd8d77d02681df5cfa-Paper.pdf)) | [Code](https://github.com/openai/guided-diffusion) | 2021.12 | NeurIPS 2021 | Introduces classifier guidance using gradients to enhance sample quality in diffusion models, surpassing GANs on image synthesis. |
+| [**Classifier-Free Diffusion Guidance**](https://openreview.net/forum?id=qw8AKxfYbI) | N/A | 2021.12 | NeurIPS 2021 Workshop | Enables guidance without classifiers by jointly training on conditional and unconditional objectives. |
+| [**Universal Guidance for Diffusion Models**](https://ieeexplore.ieee.org/document/10208653/) | [Code](https://github.com/arpitbansal297/Universal-Guided-Diffusion) | 2023.06 | CVPRW2023 | Provides a training-free method to incorporate arbitrary conditions into pre-trained unguided diffusion models using energy functions. |
+| [**Improving Sample Quality of Diffusion Models Using Self-Attention Guidance**](https://ieeexplore.ieee.org/document/10378223/) | [Code](https://github.com/SusungHong/Self-Attention-Guidance) | 2023.10 | ICCV2023 | Uses self-attention maps to guide diffusion models away from degraded regions, improving generated image quality without extra training. |
+| [**Adaptive Guidance: Training-free Acceleration of Conditional Diffusion Models**](https://arxiv.org/abs/2312.12487) | [Code](https://github.com/yazidjanati/cfgig) | 2023.12 | AAAI 2025 | Skips evaluations upon convergence via NAS policies for training-free acceleration reducing NFEs. |
+| [**ProtoDiffusion: Classifier-Free Diffusion Guidance with Prototype Learning**](https://proceedings.mlr.press/v222/baykal24a.html) | [Code](https://github.com/ituvisionlab/ProtoDiffusion) | 2024.02 | PMLR | Integrates prototype learning into classifier-free guidance to speed up sampling and enhance quality using class-specific prototypes. |
+| [**Characteristic Guidance: Non-linear Correction for Diffusion Model at Large Guidance Scale**](https://proceedings.mlr.press/v235/zheng24f.html) | [Code](https://github.com/scraed/CharacteristicGuidanceWebUI) | 2024.07 | ICML2024 | Applies non-linear corrections based on Fokker-Plank equations to handle over-saturation artifact at large guidance scales in diffusion models. |
+| [**No Training, No Problem: Rethinking Classifier-Free Guidance for Diffusion Models**](https://arxiv.org/abs/2407.02687) | N/A | 2024.07 | ICLR 2025 | Introduces independent condition guidance (ICG) and time-step guidance (TSG) using time-step encodings for training-free, invertible sampling applicable unconditionally. |
+| [**CFG++: Manifold-constrained Classifier Free Guidance for Diffusion Models**](http://arxiv.org/abs/2406.08070) | [Code](https://cfgpp-diffusion.github.io/) | 2024.06 | ICLR2025 | Constrains guidance to data manifold using orthogonal projections for better sample quality and invertibility. |
+| [**Guiding a Diffusion Model with a Bad Version of Itself**](https://proceedings.neurips.cc/paper_files/paper/2024/hash/5ee7ed60a7e8169012224dec5fe0d27f-Abstract-Conference.html) | [Code](https://github.com/NVlabs/edm2) | 2024.06 | NeurIPS 2024 | Uses a poorly trained model version for guidance to control trade-offs between sample quality and diversity. |
+| [**TFG: Unified Training-Free Guidance for Diffusion Models**](https://papers.nips.cc/paper_files/paper/2024/hash/2818054fc6de6dacdda0f142a3475933-Abstract-Conference.html) | [Code](https://github.com/YWolfeee/Training-Free-Guidance) | 2024.09 | NeurIPS 2024 | Unifies training-free guidance methods with efficient hyper-parameter optimization for various conditional generation tasks. |
+| [**TFG-Flow: Training-free Guidance in Multimodal Generative Flow**](https://arxiv.org/abs/2501.14216) | N/A | 2025.01 | ICLR 2025 | Introduces a novel training-free guidance method for multimodal generative flow, uniquely addressing the curse-of-dimensionality while maintaining unbiased sampling for guiding discrete variables in applications like molecular design. |
+| [**REG: Rectified Gradient Guidance for Conditional Diffusion Models**](https://arxiv.org/abs/2501.18865) | N/A | 2025.01 | ICML 2025 | Proposes a rectified gradient guidance method that enhances conditional diffusion models by aligning practical implementations with a theoretically valid scaled joint distribution objective, improving performance over existing guidance techniques. |
+| [**Variational Control for Guidance in Diffusion Models**](https://arxiv.org/abs/2502.03686) | [Code](https://github.com/czi-ai/oc-guidance) | 2025.02 | ArXiv | Employs variational inference for terminal cost guidance in pre-trained models, unifying methods for training-free inverse problems. |
+| [**Classifier-Free Guidance: From High-Dimensional Analysis to Generalized Guidance Forms**](https://arxiv.org/abs/2502.07849) | N/A | 2025.02 | ArXiv | Uniquely demonstrates that Classifier-Free Guidance accurately reproduces the target distribution in high and infinite dimensions, extending to a family of non-linear generalizations with improved robustness, sample fidelity, and diversity. |
+| [**Classifier-free Guidance with Adaptive Scaling**](https://arxiv.org/abs/2502.10574) | N/A | 2025.02 | ArXiv | β-CFG introduces a novel adaptive scaling method using gradient-based normalization and time-dependent β-distribution curves to dynamically balance prompt matching and image quality during the diffusion denoising process. |
+| [**Diffusion Models without Classifier-free Guidance**](https://arxiv.org/abs/2502.12154) | [Code](https://github.com/tzco/Diffusion-wo-CFG) | 2025.02 | ArXiv | Integrates condition posteriors into objectives for accelerated processes matching CFG quality without unconditional models. |
+| [**Improving Discriminator Guidance in Diffusion Models**](https://arxiv.org/abs/2503.16117) | N/A | 2025.03 | ArXiv | Proposes a training objective for discriminator guidance in diffusion models that minimizes Kullback-Leibler divergence, improving sample quality over the conventional method using Cross-Entropy loss. |
+| [**Guidance Free Image Editing via Explicit Conditioning**](https://arxiv.org/abs/2503.17593) | N/A | 2025.03 | ArXiv | Explicit  Proposes a  technique that models noise distribution on input modalities to guide conditional diffusion models, significantly reducing computational costs and improving inference time compared to CFG in image editing tasks. |
+| [**TCFG: Tangential Damping Classifier-free Guidance**](https://arxiv.org/abs/2503.18137) | [Code](https://github.com/5410tiffany/tcfg.github.io) | 2025.03 | CVPR 2025 | Geometrically filters tangential misalignments using SVD for better manifold alignment and quality with minimal overhead. |
+| [**CFG-Zero\*: Improved Classifier-Free Guidance for Flow Matching Models**](https://arxiv.org/abs/2503.18886) | [Code](https://github.com/WeichenFan/CFG-Zero-star) | 2025.03 | ArXiv | Optimizes guidance scales for flow matching to correct early velocities and zero initial steps, outperforming CFG in multimedia generation. |
+| [**Domain Guidance: A Simple Transfer Approach for a Pre-trained Diffusion Model**](https://arxiv.org/abs/2504.01521) | N/A | 2025.04 | ICLR2025 | Introduces a simple transfer approach that leverages pre-trained knowledge to guide the sampling process toward the target domain, sharing a formulation similar to classifier-free guidance for improved domain alignment and generation quality. |
+| [**Entropy Rectifying Guidance for Diffusion and Flow Models**](https://arxiv.org/abs/2504.13987) | N/A | 2025.04 | ArXiv | Entropy Rectifying Guidance (ERG) is a simple and effective guidance mechanism that improves image quality, diversity, and prompt consistency in diffusion and flow models by modifying the attention mechanism during inference, extending to unconditional sampling and combining seamlessly with other guidance methods. |
+| [**Instructing Text-to-Image Diffusion Models via Classifier-Guided Semantic Optimization**](https://arxiv.org/abs/2505.14254) | N/A | 2025.05 | ArXiv | Proposes optimizing semantic embeddings guided by attribute classifiers to steer text-to-image diffusion models for desired edits, eliminating the need for text prompts and model training or fine-tuning. |
+| [**Diffusion Models with Double Guidance: Generate with aggregated datasets**](https://arxiv.org/abs/2505.13213) | N/A | 2025.05 | ArXiv | Enables precise conditional generation by maintaining control over multiple conditions without requiring joint annotations, even when training samples lack all conditions simultaneously. |
+| [**Adaptive Diffusion Guidance via Stochastic Optimal Control**](https://arxiv.org/abs/2505.19367) | N/A | 2025.05 | ArXiv | Introduces a stochastic optimal control framework that dynamically adjusts guidance strength in diffusion models based on time, current sample, and conditioning class, offering a principled approach to guidance scheduling. |
+| [**Conditional Diffusion Models with Classifier-Free Gibbs-like Guidance**](https://arxiv.org/abs/2505.21101) | [Code](https://github.com/yazidjanati/cfgig) | 2025.05 | ArXiv | Samples tilted distributions with Rényi divergence for low-noise corrections, fixing CFG's diversity issues. |
+| [**Normalized Attention Guidance: Universal Negative Guidance for Diffusion Model**](https://arxiv.org/abs/2505.21179) | N/A | 2025.05 | ArXiv | Introduces a training-free, universal negative guidance method for diffusion models that uses extrapolation in attention space with L1-based normalization, generalizing across architectures, sampling regimes, and modalities while maintaining fidelity. |
+| [**Angle Domain Guidance: Latent Diffusion Requires Rotation Rather Than Extrapolation**](https://arxiv.org/abs/2506.11039) | N/A | 2025.06 | ICML 2025 | Angle Domain Guidance (ADG) mitigates color distortions in text-to-image latent diffusion models by constraining magnitude variations and optimizing angular alignment, preserving enhanced text-image alignment at higher guidance weights. |
+| [**Feedback Guidance of Diffusion Models**](https://arxiv.org/abs/2506.06085) | [Code](https://github.com/FelixKoulischer/FBG_using_edm2) | 2025.06 | ArXiv | Self-regulates coefficients based on predicted informativeness, adapting for complex prompts and balancing diversity-quality. |
+| [**How Much To Guide: Revisiting Adaptive Guidance in Classifier-Free Guidance Text-to-Vision Diffusion Models**](https://arxiv.org/abs/2506.08351) | N/A | 2025.06 | ArXiv | Step AG, a simple and universally applicable adaptive guidance strategy, restricts classifier-free guidance to the first several denoising steps, achieving high-quality, well-conditioned images with a 20% to 30% speedup. |
+| [**Token Perturbation Guidance for Diffusion Models**](https://arxiv.org/abs/2506.10036) | [Code](https://github.com/TaatiTeam/Token-Perturbation-Guidance) | 2025.06 | ArXiv | Shuffles tokens for training-free, condition-agnostic guidance improving unconditional generation. |
+| [**S²-Guidance: Stochastic Self Guidance for Training-Free Enhancement of Diffusion Models**](https://arxiv.org/abs/2508.12880) | [Code](https://github.com/AMAP-ML/S2-Guidance) | 2025.08 | ArXiv | Introduces a training-free self-guidance method using stochastic block-dropping to create sub-networks that refine suboptimal predictions, enhancing sample quality and prompt adherence beyond traditional CFG. |
 
-
-| Title                                                                 | Code                                                       | Date       | Publication |
-| --------------------------------------------------------------------- | ---------------------------------------------------------- | ---------- | ----------- |
-| [**Diffusion Models Beat GANs on Image Synthesis**](https://openreview.net/forum?id=qw8AKxfYbI) | [Code](https://github.com/openai/guided-diffusion)         | 2021.12    | NeurIPS 2021 |
-| [**Classifier-Free Diffusion Guidance**](https://openreview.net/forum?id=qw8AKxfYbI) | N/A                                                        | 2021.12    | NeurIPS 2021 Workshop       |
-| [**Universal Guidance for Diffusion Models**](https://ieeexplore.ieee.org/document/10208653/) | [Code](https://github.com/arpitbansal297/Universal-Guided-Diffusion)                                                        | 2023.06    | CVPRW2023   |
-| [**Improving Sample Quality of Diffusion Models Using Self-Attention Guidance**](https://ieeexplore.ieee.org/document/10378223/) | [Code](https://github.com/SusungHong/Self-Attention-Guidance)                                                       | 2023.10    | ICCV2023    |
-| [**ProtoDiffusion: Classifier-Free Diffusion Guidance with Prototype Learning**](https://proceedings.mlr.press/v222/baykal24a.html) | [Code](https://github.com/ituvisionlab/ProtoDiffusion)                                                        | 2024.02    | PMLR        |
-| [**Characteristic Guidance: Non-linear Correction for Diffusion Model at Large Guidance Scale**](https://proceedings.mlr.press/v235/zheng24f.html) | [Code](https://github.com/scraed/CharacteristicGuidanceWebUI)                                                        | 2024.07    | ICML2024    |
-| [**CFG++: Manifold-constrained Classifier Free Guidance for Diffusion Models**](http://arxiv.org/abs/2406.08070) | [Code](https://cfgpp-diffusion.github.io/)                                                        | 2024.09    | ArXiv       |
-| [**Guiding a Diffusion Model with a Bad Version of Itself**](https://proceedings.neurips.cc/paper_files/paper/2024/hash/5ee7ed60a7e8169012224dec5fe0d27f-Abstract-Conference.html) | [Code](https://github.com/NVlabs/edm2)                                                      | 2025.01    | NeurIPS 2024 |
-| [**TFG: Unified Training-Free Guidance for Diffusion Models**](https://papers.nips.cc/paper_files/paper/2024/hash/2818054fc6de6dacdda0f142a3475933-Abstract-Conference.html) | [Code](https://github.com/YWolfeee/Training-Free-Guidance)                                                        | 2025.01    | NeurIPS 2024 |
-| [**Applying Guidance in a Limited Interval Improves Sample and Distribution Quality in Diffusion Models**](https://proceedings.neurips.cc/paper_files/paper/2024/hash/dd540e1c8d26687d56d296e64d35949f-Abstract-Conference.html) | [Code](https://github.com/kynkaat/guidance-interval)                                                        | 2025.01    | NeurIPS 2024 |
-
-
-### How to Contribute
+### How to Contribute📝
 If you have any relevant papers to add, please follow the guidelines below:
 1. Fork the repository.
 2. Create a new branch for your changes.
@@ -26,6 +53,7 @@ If you have any relevant papers to add, please follow the guidelines below:
 4. Commit and push your changes.
 5. Open a pull request for review.
 
-## Contact
-For any questions or suggestions, please contact [ylanaa@connect.ust.hk](ylan:ylanaa@connect.ust.hk).
+
+### To Do
+Will update this repository by categorizing the papers.
 
