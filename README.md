@@ -1,8 +1,9 @@
-## Awesome-Diffusion-Guidance [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
+## 🚀 Awesome-Diffusion-Guidance [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
-🚀 **Welcome to the collection of research on diffusion guidance methods!**  
-This repo curates cutting-edge papers to help you stay ahead in Diffusion Guidance. Dive in, contribute, and let's advance the field together! 🌟
+ **Welcome to the collection of research on diffusion guidance methods!**  
+This repo curates cutting-edge papers on diffusion model guidance 🌟
 
+Your stars fuel the updates! ⭐ This library is actively maintained, with new papers and features added regularly.
 ## Table of Contents
 - [Papers](#papers)
 - [How to Contribute](#how-to-contribute)
