@@ -5,9 +5,11 @@ This repo curates cutting-edge papers on diffusion model guidance 🌟
 
 Your stars fuel the updates! ⭐ This library is actively maintained, with new papers and features added regularly.
 ## Table of Contents
-- [Papers](#papers)
-- [How to Contribute](#how-to-contribute)
-- [To Do](#to-do)
+- [🚀 Awesome-Diffusion-Guidance ](#-awesome-diffusion-guidance-)
+- [Table of Contents](#table-of-contents)
+  - [Papers](#papers)
+  - [How to Contribute📝](#how-to-contribute)
+  - [To Do](#to-do)
   
 ### Papers
 | Title | Code | Date | Publication | Summary |
@@ -46,7 +48,7 @@ Your stars fuel the updates! ⭐ This library is actively maintained, with new p
 | [**Adaptive Diffusion Guidance via Stochastic Optimal Control**](https://arxiv.org/abs/2505.19367) | N/A | 2025.05 | ArXiv | Introduces a stochastic optimal control framework that dynamically adjusts guidance strength in diffusion models based on time, current sample, and conditioning class, offering a principled approach to guidance scheduling. |
 | [**Conditional Diffusion Models with Classifier-Free Gibbs-like Guidance**](https://arxiv.org/abs/2505.21101) | [Code](https://github.com/yazidjanati/cfgig) | 2025.05 | ArXiv | Samples tilted distributions with Rényi divergence for low-noise corrections, fixing CFG's diversity issues. |
 | [**Normalized Attention Guidance: Universal Negative Guidance for Diffusion Model**](https://arxiv.org/abs/2505.21179) | N/A | 2025.05 | ArXiv | Introduces a training-free, universal negative guidance method for diffusion models that uses extrapolation in attention space with L1-based normalization, generalizing across architectures, sampling regimes, and modalities while maintaining fidelity. |
-| [**Angle Domain Guidance: Latent Diffusion Requires Rotation Rather Than Extrapolation**](https://arxiv.org/abs/2506.11039) | N/A | 2025.06 | ICML 2025 | Angle Domain Guidance (ADG) mitigates color distortions in text-to-image latent diffusion models by constraining magnitude variations and optimizing angular alignment, preserving enhanced text-image alignment at higher guidance weights. |
+| [**Angle Domain Guidance: Latent Diffusion Requires Rotation Rather Than Extrapolation**](https://arxiv.org/abs/2506.11039) | [Code](https://github.com/jinc7461/ADG) | 2025.06 | ICML 2025 | Angle Domain Guidance (ADG) mitigates color distortions in text-to-image latent diffusion models by constraining magnitude variations and optimizing angular alignment, preserving enhanced text-image alignment at higher guidance weights. |
 | [**Feedback Guidance of Diffusion Models**](https://arxiv.org/abs/2506.06085) | [Code](https://github.com/FelixKoulischer/FBG_using_edm2) | 2025.06 | ArXiv | Self-regulates coefficients based on predicted informativeness, adapting for complex prompts and balancing diversity-quality. |
 | [**How Much To Guide: Revisiting Adaptive Guidance in Classifier-Free Guidance Text-to-Vision Diffusion Models**](https://arxiv.org/abs/2506.08351) | N/A | 2025.06 | ArXiv | Step AG, a simple and universally applicable adaptive guidance strategy, restricts classifier-free guidance to the first several denoising steps, achieving high-quality, well-conditioned images with a 20% to 30% speedup. |
 | [**Token Perturbation Guidance for Diffusion Models**](https://arxiv.org/abs/2506.10036) | [Code](https://github.com/TaatiTeam/Token-Perturbation-Guidance) | 2025.06 | ArXiv | Shuffles tokens for training-free, condition-agnostic guidance improving unconditional generation. |
